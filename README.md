@@ -5,20 +5,12 @@
 cd ~
 git clone https://github.com/Elegycloud/clash-for-linux-backup.git ClashLinux
 ```
-2:修改 .env 文件
+### 2:修改 .env 文件
 ```
 export CLASH_URL='订阅地址'
 export CLASH_SECRET=''
 ```
-3:执行命令
-```shell
-sudo bash clash-linux-backup/start.sh
-```
-4:加载环境变量
-```shell
-
-```
-5:设置环境变量
+### 3:设置环境变量
 ```shell
 cat>~/.bashrc_clash<<EOF
 alias proxy_start='sudo bash ~/ClashLinux/start.sh';
@@ -47,8 +39,12 @@ proxy_off(){
 }
 EOF
 ```
-6:加载环境变量
+### 4:加载环境变量
 ```shell
 grep -Fxq "source .bashrc_clash" ~/.bashrc || echo 'source .bashrc_clash' >> ~/.bashrc
 cd ~ && source .bashrc
+```
+### 5:启动
+```shell
+proxy_start
 ```
