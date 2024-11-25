@@ -3,7 +3,7 @@
 ### 1:进入家目录 并下载代码（调整了部分脚本代码）
 ```shell
 cd ~
-git clone https://github.com/Elegycloud/clash-for-linux-backup.git ClashLinux
+git clone git@github.com:lonelywalkersource/clash-linux.git
 ```
 ### 2:修改 .env 文件
 ```
