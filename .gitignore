@@ -1,3 +1,4 @@
 /.env
 conf/cache.db
+conf/config.yaml
 /.idea
